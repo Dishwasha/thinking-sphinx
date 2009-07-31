@@ -1,5 +1,5 @@
 Dir[File.join(File.dirname(__FILE__), '../vendor/*/lib')].each do |path|
-  $LOAD_PATH.unshift path
+  $LOAD_PATH << path
 end
 
 require 'active_record'
